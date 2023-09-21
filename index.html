@@ -3,26 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Tarefas</title>
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="./main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
+    <header>
+        <h1>Formulário de Cadastro</h1>
+    </header>
     <div class="container">
-        <header>
-            <img src="./images/logo.png" alt="Icone de uma prancheta">
-            <h1>Lista de Tarefas</h1>
-        </header>
-        <form id="form-atividades">
-            <input type="text" id="nome-tarefa" required placeholder="Nome da Tarefa">
-            <button type="submit">Adicionar +</button>
+        <form>
+            <div class="personal-info">
+                <h2>Dados Pessoais</h2>
+                <label for="name">Nome: </label>
+                <input type="text" name="name" id="name" placeholder="Nome Completo">
+
+                <label for="cpf">CPF: </label>
+                <input type="tel" name="cpf" id="cpf" placeholder="Seu CPF"> <br />
+                
+                <label for="phone">Celular: </label>
+                <input type="tel" name="phone" id="phone" placeholder="Insira seu Numero de Celular">
+    
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="Insira Seu E-mail">
+            </div>
+            <div class="form-adress">
+                <h2>Endereço</h2>
+                <label for="adress">Endereço: </label>
+                <input type="text" name="adress" id="adress" placeholder="Endereço Completo">
+
+                <label for="number">Nº: </label>
+                <input type="number" name="number" id="number" placeholder="Numero"> <br />
+
+                <label for="city">Cidade: </label>
+                <input type="tel" name="city" id="city" placeholder="Sua Cidade">
+
+                <label for="state">Estado: </label>
+                <input type="tel" name="state" id="state" placeholder="Seu Estado">
+                
+                <label for="cep">CEP: </label>
+                <input type="tel" name="cep" id="cep" placeholder="Seu CEP">
+            </div>
+
+            <button type="submit">Cadastrar</button>
         </form>
-        <ul>
-        </ul>
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="./main.js"></script>
+
+    <footer>
+        <p>2023 - &copy; rlr-cadastros todos os direitos reservados</p>
+    </footer>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
